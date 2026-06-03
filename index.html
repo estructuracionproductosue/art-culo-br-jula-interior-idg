@@ -1,6 +1,21 @@
-<div style="text-align:center;margin:40px auto;">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La Brújula Interior</title>
 
 <style>
+
+html,body{
+margin:0;
+padding:0;
+background:transparent;
+font-family:'Segoe UI',sans-serif;
+overflow:hidden;
+}
+
 @keyframes pulseIDG{
 0%{
 transform:scale(1);
@@ -21,6 +36,11 @@ box-shadow:0 0 0 0 rgba(214,141,179,0);
 100%{left:120%;}
 }
 
+.wrapper{
+text-align:center;
+padding:40px 20px;
+}
+
 .idg-btn{
 display:inline-flex;
 align-items:center;
@@ -28,20 +48,13 @@ gap:12px;
 padding:18px 34px;
 border-radius:999px;
 background:linear-gradient(90deg,#d68db3,#ef9b71,#f2b45f);
-color:white !important;
-text-decoration:none !important;
-font-family:'Segoe UI',sans-serif;
+color:white;
+text-decoration:none;
 font-size:18px;
 font-weight:700;
-letter-spacing:.5px;
 position:relative;
 overflow:hidden;
 animation:pulseIDG 2s infinite;
-transition:.3s ease;
-}
-
-.idg-btn:hover{
-transform:translateY(-3px) scale(1.05);
 }
 
 .idg-btn::before{
@@ -56,34 +69,24 @@ transform:skewX(-25deg);
 animation:shineIDG 3s linear infinite;
 }
 
-.idg-icon{
-font-size:22px;
-position:relative;
-z-index:2;
-}
-
-.idg-text{
-position:relative;
-z-index:2;
-}
-
 .idg-sub{
 margin-top:14px;
-font-family:'Segoe UI',sans-serif;
 font-size:14px;
 color:#7a6a63;
 }
+
 </style>
+</head>
+
+<body>
+
+<div class="wrapper">
 
 <a class="idg-btn"
 href="https://campusvirtual.sanjosevegas.edu.co/pluginfile.php/862732/mod_resource/content/1/La%20br%C3%BAjula%20interior%201.pdf"
 target="_blank">
 
-<span class="idg-icon">🧭</span>
-
-<span class="idg-text">
-Leer artículo: La Brújula Interior
-</span>
+🧭 Leer artículo: La Brújula Interior
 
 </a>
 
@@ -92,3 +95,6 @@ Haz clic para explorar el recurso de lectura y profundizar en tu proceso de refl
 </div>
 
 </div>
+
+</body>
+</html>
